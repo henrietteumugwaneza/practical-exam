@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoStartup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-inter bg-gradient-to-br from-[#0b1220] via-[#0f1a35] to-[#1a2b5f] text-white min-h-screen">
+<!-- logo and navigation part -->
+
+<nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+  
+  <div class="flex items-center gap-3">
+    <span class="text-2xl font-bold"><img src="logo-dark.svg" alt=""></span>
+  </div>
+
+  <ul class="hidden md:flex items-center gap-8 text-gray-300">
+    <li class="text-blue-400 font-medium">Home</li>
+    <li class="hover:text-white cursor-pointer">Features</li>
+    <li class="hover:text-white cursor-pointer flex items-center gap-1">
+      Pages
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </li>
+    <li class="hover:text-white cursor-pointer">Support</li>
+  </ul>
+
+  <!-- Buttons -->
+  <div class="flex items-center gap-4">
+    <button class="bg-blue-600 px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+      Sign In
+    </button>
+    <button class="bg-white/10 px-5 py-2 rounded-lg font-medium hover:bg-white/20 transition">
+      Sign Up
+    </button>
+    <button class="ml-2 text-xl"></button>
+  </div>
+
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+  <div>
+
+    <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6">
+      <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+      <span class="text-sm text-gray-200">Tailwind Template for Startups</span>
+    </div>
+
+    <h1 class="text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
+      Digital Solutions for <br>
+      Your <span class="underline decoration-blue-500">SaaS</span>
+    </h1>
+
+
+    <p class="text-gray-300 max-w-xl mb-10">
+      Handcrafted Tailwind CSS template for your next - Startup, Business,
+      Agency or SaaS Website. Comes with refreshing design and everything
+      you need to kickstart your next web project.
+    </p>
+
+    <div class="flex items-center gap-6">
+      <button class="bg-blue-600 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 hover:bg-blue-700 transition">
+        Get Started →
+      </button>
+
+      <button class="flex items-center gap-2 text-gray-200 hover:text-white transition">
+        ▶ How it Work
+      </button>
+    </div>
+
+  </div>
+
+  <div class="relative flex justify-center">
+
+    <img 
+      src="image-2.jpg" class="rounded-xl w-[420px] shadow-2xl">
+
+    <img 
+      src="image-1.jpg" class="absolute -left-10 bottom-[-40px] w-[300px] rounded-xl shadow-2xl border border-white/10">
+
+  </div>
+
+</section>
+
+
+</body>
+</html>
